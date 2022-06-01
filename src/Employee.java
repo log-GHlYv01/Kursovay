@@ -18,6 +18,9 @@ public class Employee {
         this.id = counter++;
     }
 
+    public Employee(String name, String surname, String patronymicName, double v) {
+    }
+
     public void setSalary(double salary) {
         this.salary = salary;
     }
@@ -48,6 +51,11 @@ public class Employee {
 
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("id %d, ФИО: %s %s %s, ЗП: %.2f , № отдела: %d ", id, surname, name, patronymicName, salary, department );
     }
 }
 
