@@ -5,10 +5,10 @@ public class Main {
 
     public static void main(String[] args) {
         for (int i = 0; i < EMPLOYEES.length; i++) {
-            EMPLOYEES[i] = generateEmployee(i+1, (int) (1 + (5 - 1) * Math.random());
+            EMPLOYEES[i] = generateEmployee(i + 1 , (int) (1 + (5 - 1) * Math.random()));
         }
-        EMPLOYEES[0] = new Employee("Имя1"," Фамилия 1", " Очество" , );
 
+        System.out.println(EMPLOYEES[i]);
     }
     private static Employee generateEmployee(int i){
             int start = 30_000;
@@ -17,9 +17,8 @@ public class Main {
                 "Имя"+i,
                 " Фамилия 1"+i,
                 " Очество"+i,
-                 start+(end-start) * Math.random(),
-                department,
+                 start+(end-start) * Math.random()
+                );
 
-        );
     }
 }
